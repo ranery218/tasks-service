@@ -1,0 +1,40 @@
+# Binaries
+bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Build/test outputs
+*.test
+*.out
+coverage.out
+cover.out
+
+# Go workspace/cache artifacts
+.gocache/
+.gomodcache/
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Logs/tmp
+*.log
+tmp/
+
+# IDE/editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Docker local overrides
+docker-compose.override.yml
