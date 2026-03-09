@@ -238,9 +238,4 @@ make test-integration
 - `make migrate-up|migrate-down|migrate-status`
 - `make test|test-usecase|test-business-cover|test-integration`
 
-## 15. Что проверяющим важно знать
 
-- Refresh token здесь **opaque**, не JWT (в БД хранится hash).
-- `GET /tasks` допускает чтение любым авторизованным пользователем по согласованному ТЗ.
-- Для управления участниками используется путь команды (`/teams/{team_id}/...`) и `user_id` в body/path.
-- Приложение может работать без MySQL/Redis (in-memory режим), но для проверки SQL-части ТЗ нужен режим с MySQL.
